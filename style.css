@@ -1,0 +1,299 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+.zagolovok {
+    background-color: black;
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    z-index: 20;
+}
+.nav {
+   position: absolute;
+   right: 20px;
+   top: 10px;
+}
+.nav-item {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 25px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.nav-item:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+/* начинается главный контейнер */
+.glav {
+    background-image: linear-gradient(#DB7E7E , #FFC997);
+    position: relative;
+    z-index: -2;
+    height: 100vh;
+}
+.glav-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+}
+h1{
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px 0 rgb(247, 85, 120);
+}
+.glav-btn {
+    background-color: white;
+    border-radius: 50px;
+    text-shadow: 2px 2px 0 rgb(247, 85, 120);
+    padding: 20px;
+    margin: 10px auto;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+}
+.decoration {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.elem1 {
+    position: absolute;
+    bottom: 0;
+    left: 45px;
+}
+.elem2 {
+    position: absolute;
+    top: -100px;
+    left: -70px;
+    z-index: -1;
+}
+.elem3 {
+    position: absolute;
+    bottom: 0;
+    left: -60px;
+}
+.elem4 {
+    position: absolute;
+    bottom: 80px;
+    right: 500px;
+}
+.elem5 {
+    position: absolute;
+    top: 130px;
+    left: 500px;
+    animation: elem5 3s infinite;
+}
+.elem6 {
+    position: absolute;
+    bottom: -100px;
+    right: -150px;
+    animation: elem6 3s infinite;
+}
+
+.conteiner {
+    width: 80%;
+    margin: auto;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.section-text {
+   line-height: 30px;
+   font-size: 20px;
+}
+
+.chmd {
+    background-image: linear-gradient(7deg, #DB7E7E 18%, #FFC997 70%, white 70% );
+}
+
+.left {
+    width: 45%;
+    display: inline-block;
+}
+
+.right {
+    width: 45%;
+    display: inline-block;
+}
+
+.right img {
+    width: 100%;
+}
+
+.left-text {
+    background-color: white;
+    border-radius: 40px;
+    box-shadow:  5px 5px 0 rgb(247, 85, 120);
+    padding: 20px;
+    border: black 2px solid;
+}
+
+.uslugi {
+    background: linear-gradient(155deg, #DB7E7E 66%, rgba(255,255,255,1) 66%);
+    text-align: center;
+}
+
+.uslugi-heading {
+    color: white;
+    padding: 15px;
+}
+
+.card {
+    width: 30%;
+    display: inline-block;
+    background-color: white;
+    border-radius: 30px;
+    height: fit-content;
+    padding: 10px;
+    margin: 0 5px;
+    border: #FFC997 2px solid ;
+
+}
+
+.card img {
+    max-width: 100%;
+    margin: auto;
+}
+
+hr {
+    background-color: #DB7E7E ;
+    width: 75%;
+    margin: 10px auto;
+    height: 3px;
+}
+
+.why {
+    position: relative;
+    padding: 50px 0;
+}
+
+.why-img2 {
+    left: 40px;
+    position: absolute;
+    top: 0;
+    width: 250px;
+}
+
+.why-img1 {
+    position: absolute;
+    bottom: 0;
+    right: -30px;
+    width: 600px;
+    z-index: -15;
+}
+
+.why-card {
+    box-shadow: 5px 5px 0 rgb(247, 85, 120) ;
+    border: 2px #FFC997 solid;
+    margin: 10px auto;
+    padding: 30px;
+    border-radius: 20px;
+    width: 700px;
+    background-color: white;
+}
+
+.why-card2 {
+    position: relative;
+    left: 80px;
+}
+
+.raboty img {
+    width: 49%;
+    border: 3px rgb(247, 85, 120) solid ;
+    border-radius: 20px;
+}
+
+.napishite {
+    background: linear-gradient(#DB7E7E , #FFC997);
+    padding: 50px 0;
+}
+
+.napishite .glav-btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+@keyframes elem6 {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translatex(-400px) rotate(-180deg);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes elem5 {
+    0% {
+     transform: translate(0);
+    }
+    50% {
+     transform: translate(200px, 30px);
+    }
+    100% {
+     transform: translate(0);
+    }
+}
+
+@media (max-width:1156px) {
+    .nav-item {
+        display: block;
+    }
+    .zagolovok {
+        height: 250px;
+    }
+    .logo {
+        transform: translate(0,50px) scale(1.5);
+        display: inline-block;
+    }
+    .glav-content {
+        top: 70%;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        display: none;
+    }
+    .why-img2 {
+        display: none;
+    }
+    .why-card2 {
+        left: 0;
+    }
+}
+
+@media (max-width:788px) {
+    .why-card {
+        width: 100%;
+    }
+    .card {
+        display: block;
+        width: 100%;
+    }
+}
